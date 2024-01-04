@@ -1,6 +1,6 @@
 #include <iostream>
 
-#define MAX_INPUT 200000
+#define MAX_INPUT 500002
 #define MOD 1000000007
 #define ll long long
 ll rightFens[MAX_INPUT]; // right inversion
@@ -68,6 +68,7 @@ int main() {
 
         if (leftAmount < 2) continue;
         if (rightAmount < 2) continue;
+
         sum += calculate(a, leftAmount, rightAmount);
         sum %= MOD;
     }
